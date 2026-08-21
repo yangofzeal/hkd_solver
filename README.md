@@ -1,5 +1,7 @@
 # HKD Solver
 
+A specialized exact optimization accelerator that measured 4.332× Gurobi throughput on its published set-cover benchmark, with 500/500 exact solutions verified.
+
 **Exact minimum-cost set-cover optimization with a measured 4.3x+
 throughput result on the included benchmark workload.**
 
