@@ -165,6 +165,70 @@ all_exact=True
 
 before a speedup result is accepted.
 
+## Theory of Operation
+
+HKD Solver is based on a simple observation about many large discrete
+optimization problems:
+
+**the logical size of a problem and the amount of state that must actually
+change during a useful search step are often very different.**
+
+Traditional solver implementations may repeatedly perform work associated
+with a comparatively large model even when a particular transition affects
+only a small part of the active search state.
+
+HKD Solver is designed around **active-state proportional computation**.
+
+Conceptually, instead of treating every search transition as requiring work
+proportional to the complete logical problem, HKD maintains sufficient exact
+state to concentrate computation on the portion of the problem that is
+currently relevant.
+
+For a logical problem state \(S\), let:
+
+- \(N\) denote the size of the complete logical state;
+- \(A(S)\) denote the active portion relevant to the current transition;
+- \(|A(S)|\) denote the amount of active work.
+
+A conventional implementation may contain operations whose practical cost
+behaves approximately like:
+
+\[
+T_{\mathrm{general}}(S) \propto N
+\]
+
+HKD attempts to move appropriate operations toward:
+
+\[
+T_{\mathrm{HKD}}(S) \propto |A(S)|
+\]
+
+When:
+
+\[
+|A(S)| \ll N
+\]
+
+the difference can become substantial.
+
+### Exactness is preserved
+
+This is not an approximation technique.
+
+HKD does **not** obtain its benchmark advantage by accepting a worse
+objective, terminating at a nonzero optimization gap, or replacing the
+original optimization problem with a heuristic answer.
+
+The solver maintains the information required to preserve exact search
+semantics. Candidate solutions are independently verifiable against the
+original constraints and objective.
+
+The included benchmark therefore requires:
+
+```text
+jobs_verified=500
+all_exact=True
+
 ## Benchmark publication note
 
 Before publicly publishing third-party solver benchmark results, verify
