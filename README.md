@@ -273,3 +273,31 @@ A reproducible benchmark measured:
 - Exact verification: True
 
 This is a measured result for the published benchmark instance, not a claim of the same speedup on every optimization problem.
+
+HKD Solver Cloud is live.
+
+A reproducible exact optimization benchmark measured:
+
+Reference exact solver: 2354.060625 ms
+HKD:                    0.138542 ms
+Measured speedup:        16,991.67x
+Objective match:         TRUE
+Exact verification:      TRUE
+
+This is a benchmark-specific result, not a claim that every optimization problem sees the same speedup.
+
+Commercial solving:
+
+Quick Solve — $19
+https://buy.stripe.com/eVqeV64qv6o78rE8ITgUM0e
+
+Professional Solve — $79
+https://buy.stripe.com/9B600c2in4fZfU62kvgUM0f
+
+Heavy Solve — $299
+https://buy.stripe.com/cNi3co5uzdQz23g8ITgUM0g
+
+Optimization Report — $999
+https://buy.stripe.com/6oU3co8GLbIreQ29MXgUM0h
+
+Send a set-cover / exact-cover optimization problem and receive a verified HKD result.
