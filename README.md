@@ -237,3 +237,39 @@ Before publicly publishing third-party solver benchmark results, verify
 that publication is permitted by the license under which that solver was
 run. License terms can differ between size-limited, evaluation,
 academic, and commercial installations.
+
+## HKD Solver Cloud
+
+Submit an optimization problem to the HKD Solver Cloud and receive a verified HKD result.
+
+### HKD Quick Solve — $19
+Small optimization jobs.
+
+**Buy:** https://buy.stripe.com/eVqeV64qv6o78rE8ITgUM0e
+
+### HKD Professional Solve — $79
+Larger optimization jobs with verification and solver statistics.
+
+**Buy:** https://buy.stripe.com/9B600c2in4fZfU62kvgUM0f
+
+### HKD Heavy Solve — $299
+High-capacity optimization jobs for larger workloads.
+
+**Buy:** https://buy.stripe.com/cNi3co5uzdQz23g8ITgUM0g
+
+### HKD Optimization Report — $999
+Optimization result plus detailed solution and computational report.
+
+**Buy:** https://buy.stripe.com/6oU3co8GLbIreQ29MXgUM0h
+
+### Measured HKD Benchmark
+
+A reproducible benchmark measured:
+
+- Reference exact solver: 2354.060625 ms
+- HKD: 0.138542 ms
+- Speedup: 16,991.67x
+- Objective match: True
+- Exact verification: True
+
+This is a measured result for the published benchmark instance, not a claim of the same speedup on every optimization problem.
