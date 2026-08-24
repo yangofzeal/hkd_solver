@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hkd-solver"
+version = "1.0.1"
+description = "HKD high-performance optimization and exact solving engine"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Michael Yang"}
+]
+
+[tool.setuptools]
+py-modules = ["hkd_solver"]
